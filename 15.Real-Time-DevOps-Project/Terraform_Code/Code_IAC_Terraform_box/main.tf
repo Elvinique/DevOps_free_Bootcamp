@@ -99,7 +99,7 @@ resource "aws_instance" "terraform_vm" {
     connection {
       type        = "ssh"
       user        = "ubuntu"
-      private_key = file("week11.pem")
+    
       host        = self.public_ip
     }
   }
